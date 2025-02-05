@@ -14,11 +14,11 @@ const AppLayout = () => {
     <div className="app">
       <Header />
       <Body />
-      <RestaurantCard/>
+      
     </div>
   );
 };
-
+//<RestaurantCard/>
 export default AppLayout;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

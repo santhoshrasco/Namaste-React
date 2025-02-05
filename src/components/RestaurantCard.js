@@ -1,5 +1,5 @@
 import React from "react";
-import resList from '../utils/mockData'
+
 import logo from '../../Images/Nowsin_logo.jpg'
 
 
@@ -9,7 +9,7 @@ if (!resData) {
   return null; // or return a fallback UI
 }
   const { name, image, rating, price, cuisines, address, eta, restaurant } = resData;
-    //<h4>{cuisines.join(", ")}</h4>
+   
   return (
     <div className="res-card">
       <h3> {name}</h3>
