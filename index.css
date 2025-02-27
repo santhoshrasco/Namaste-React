@@ -68,3 +68,9 @@ justify-content: space-evenly;
   margin : 20px;
   background-color: lightgrey;
 }
+.login-btn{
+  cursor: pointer;
+}
+.filter{
+  display: flex;
+}
