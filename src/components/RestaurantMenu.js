@@ -14,21 +14,14 @@ const RestaurantMenu = () => {
 
   const { itemCards } = resInfo?.cards[2]?.groupedCard?.cardsGroupedMap?.REGULAR?.cards[1]?.card?.card;
  console.log(itemCards);
- 
-  return (
-    <div className="menu">
-      <h1>{name}</h1>
-      <p>{cuisines.join(" , ")}-{costForTwoMessage}</p>
-      <h2>Menu</h2>
+  const categories  = resInfo?.cards[2]?.groupedCard?.cardsGroupedMap?.REGULAR?.cards.filter((c)=> c.card?.["card"]?.["@type"])
 
-      <ul>
-        {itemCards.map((item)=>(<li> {item.card.info.name}- {item.card.info.price}</li>))}
-        <li>Briyani</li>
-        <li>Meals</li>
-        <li>Fried Rice</li>
-        <li>Breds</li>
-      </ul>
-      <img></img>
+  return (
+    <div className="text-center">
+      <h1 className="font-black my-6 text-2xl">{name}</h1>
+      <p className="font-bold text-lg">{cuisines.join(" , ")}-{costForTwoMessage}</p>
+      <h2>Menu</h2>
+      
     </div>
   );
 };

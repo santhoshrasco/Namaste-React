@@ -8,6 +8,7 @@ import Error from "./components/Error";
 import Contact from "./components/ContactUs";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Grocery from "./components/Grocery";
+import RestaurantCategory from "./components/RestaurantCategory";
 
 
 
@@ -48,6 +49,10 @@ const appRouter = createBrowserRouter([
       {
         path:"/grocery",
         element: <Grocery/>
+      },
+      {
+        path:"/accordion",
+        element: <RestaurantCategory/>
       }
       
     ],
