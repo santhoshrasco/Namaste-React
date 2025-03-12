@@ -16,7 +16,12 @@ const handleClick =()=>{
             <span className="font-bold text-lg shadow">{ "IceCreams"  }</span>
             <span className="font-bold text-lg shadow">{ "Sandwiches"  }</span>
             <span>{""}</span>
-
+            {categories.map((category, index)=>{
+                <RestaurantCategory 
+                key ={category?.card?.card.title}
+                data = {category?.card?.card}
+                showItems = {index ===1?true :false}/>
+            })}
         </div>
     )
 }
